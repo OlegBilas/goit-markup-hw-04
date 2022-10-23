@@ -89,10 +89,12 @@ nav {
 .nav-contacts-icon-email {
   width: 16px;
   height: 12px;
+  fill: currentColor;
 }
 .nav-contacts-icon-phone {
   width: 10px;
   height: 16px;
+  fill: currentColor;
 }
 
 .link:hover,
@@ -165,7 +167,7 @@ footer .container {
   margin: 0px 0px 20px;
 }
 
-.footer-social-links > p {
+.footer-social-list-links > p {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -174,7 +176,7 @@ footer .container {
   margin-bottom: 20px;
   color: var(--white-color);
 }
-.social-links {
+.social-list-links {
   display: inline-flex;
   width: 206px;
   height: 44px;
@@ -187,13 +189,14 @@ footer .container {
   width: 44px;
   height: 44px;
 
+  color: var(--social-link-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  cursor: pointer;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 .social-link:not(:nth-last-child()) {
@@ -202,11 +205,8 @@ footer .container {
 .social-link-svg {
   width: 20px;
   height: 20px;
-  fill: var(--social-link-color);
-}
-.social-link-svg:hover,
-.social-link-svg:focus {
-  fill: var(--white-color);
+
+  fill: currentColor;
 }
 
 footer .social-link-svg {
@@ -247,7 +247,8 @@ footer .social-link-svg {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1600px;
+  background-color: #c4c4c4;
 }
 .hero-btn {
   font-family: inherit;
@@ -259,6 +260,7 @@ footer .social-link-svg {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   display: block;
   width: 216px;
@@ -345,7 +347,7 @@ h2.title {
   text-align: center;
   margin-bottom: 16px;
 }
-.our-team .social-links {
+.our-team .social-list-links {
   margin: 0 32px 30px;
 }
 
@@ -355,7 +357,7 @@ h2.title {
   border-radius: 0px 0px 4px 4px;
 }
 
-.client-links {
+.client-list-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -367,23 +369,21 @@ h2.title {
   width: 170px;
   height: 92px;
 
+  color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
 }
 .client-link:hover,
 .client-link:focus {
-  cursor: pointer;
+  /* cursor: pointer; */
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .client-link-svg {
   width: 106px;
   height: 60px;
-  fill: var(--social-link-color);
-}
-.client-link-svg:hover,
-.client-link-svg:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* Portfolio */

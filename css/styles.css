@@ -65,35 +65,39 @@ nav {
   display: flex;
 }
 .link {
+  display: block;
+  
   text-decoration: none;
   font-weight: 500;
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
-
-  display: block;
 }
 .link.nav-contacts {
   display: flex;
   align-items: center;
+
   color: inherit;
 }
 
 .nav-contacts-icon-email,
 .nav-contacts-icon-phone {
-  stroke: currentColor;
   margin-right: 10px;
+
+  stroke: currentColor;
 }
 
 .nav-contacts-icon-email {
   width: 16px;
   height: 12px;
+
   fill: currentColor;
 }
 .nav-contacts-icon-phone {
   width: 10px;
   height: 16px;
+
   fill: currentColor;
 }
 
@@ -103,13 +107,14 @@ nav {
   color: var(--accent-color);
 }
 .logo {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: inherit;
-  margin-right: 93px;
 }
 .blue-logo {
   color: var(--accent-color);
@@ -122,7 +127,7 @@ nav {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 .list {
   display: flex;
@@ -131,11 +136,12 @@ ul {
 }
 /* Footer */
 .foot-adress {
+  margin-bottom: 9px;
+
   font-weight: inherit;
   line-height: 1.71;
   letter-spacing: inherit;
   color: var(--white-color);
-  margin-bottom: 9px;
 }
 .foot-contacts {
   font-weight: inherit;
@@ -168,24 +174,26 @@ footer .container {
 }
 
 .footer-social-list-links > p {
+  margin-top: 12px;
+    margin-bottom: 20px;
+
   font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-
-  margin-top: 12px;
-  margin-bottom: 20px;
   color: var(--white-color);
 }
 .social-list-links {
   display: inline-flex;
+  justify-content: space-between;
+
   width: 206px;
   height: 44px;
-  justify-content: space-between;
 }
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 44px;
   height: 44px;
 
@@ -224,19 +232,19 @@ footer .social-link-svg {
 }
 .list.peculiarities,
 .list.our-team {
-  gap: 30px;
   align-items: flex-start;
+  gap: 30px;
 }
 
 .hero h1 {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--white-color);
-
-  margin-bottom: 30px;
 }
 .hero.section {
   background-image: linear-gradient(
@@ -251,23 +259,23 @@ footer .social-link-svg {
   background-color: #c4c4c4;
 }
 .hero-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   display: block;
+
   width: 216px;
   height: 50px;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:active,
 .hero-btn:hover,
@@ -275,6 +283,7 @@ footer .social-link-svg {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
   cursor: pointer;
 }
 .visially-hidden {
@@ -294,6 +303,7 @@ footer .social-link-svg {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -305,15 +315,17 @@ footer .social-link-svg {
 .peculiarities-svg {
   width: 70px;
   height: 70px;
+
   fill: #000;
 }
 
 .peculiarities h3 {
+  margin-bottom: 10px;
+
   font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
   color: var(--header-color);
-  margin-bottom: 10px;
 }
 
 .peculiarities p {
@@ -323,29 +335,31 @@ footer .social-link-svg {
   padding-top: 0;
 }
 h2.title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--header-color);
-
-  margin-bottom: 50px;
 }
 .our-team img {
   margin-bottom: 30px;
 }
 .our-team h3 {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--header-color);
-  margin-bottom: 10px;
 }
 .our-team p {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 16px;
 }
 .our-team .social-list-links {
   margin: 0 32px 30px;
@@ -366,6 +380,7 @@ h2.title {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 92px;
 
@@ -375,7 +390,6 @@ h2.title {
 }
 .client-link:hover,
 .client-link:focus {
-  /* cursor: pointer; */
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -383,6 +397,7 @@ h2.title {
 .client-link-svg {
   width: 106px;
   height: 60px;
+
   fill: currentColor;
 }
 
@@ -392,28 +407,33 @@ h2.title {
 }
 
 .portfolio-title {
+  margin-left: 24px;
+    margin-right: 24px;
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
-  margin-left: 24px;
-  margin-right: 24px;
 }
 .portfolio-text {
-  font-size: 16px;
-  line-height: 1.88;
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 20px;
+  
+  font-size: 16px;
+  line-height: 1.88;
 }
 .list.buttons {
   justify-content: center;
+
   margin-bottom: 50px;
 }
 .list.buttons > .portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
 .btn {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -422,8 +442,6 @@ h2.title {
   letter-spacing: inherit;
   color: var(--header-color);
   background-color: var(--background-btn);
-
-  padding: 6px 22px;
   border-radius: 4px;
 }
 .btn.common {
@@ -434,6 +452,7 @@ h2.title {
 .btn:hover,
 .btn:active {
   cursor: pointer;
+
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -443,8 +462,9 @@ h2.title {
   flex-wrap: wrap;
 }
 .list.portfolio .portfolio-item {
-  border: 1px solid #eeeeee;
   margin-bottom: 30px;
+  
+  border: 1px solid #eeeeee;
 }
 .list.portfolio > .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0px;
